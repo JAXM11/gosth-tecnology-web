@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghost Tecnology - Reparación de Celulares</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #005fa3;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #004a7f;
+    }
+    section {
+      padding: 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #0077cc;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gosth Tecnology</h1>
+  <p>Reparación Profesional de Celulares y Electrónicos</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#acerca">Acerca de</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+  <h2>Bienvenido a Gosht Tecnology</h2>
+  <p>Ofrecemos servicios rápidos y confiables de reparación para celulares, tablets, laptops y más.</p>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>Reparación de Pantallas</h3>
+      <p>Cambiamos pantallas rotas o dañadas para todo tipo de dispositivos.</p>
+    </div>
+    <div class="service-card">
+      <h3>Cambio de Batería</h3>
+      <p>Reemplazamos baterías agotadas para mejorar el rendimiento de tu equipo.</p>
+    </div>
+    <div class="service-card">
+      <h3>Reparación de Placa</h3>
+      <p>Diagnóstico y reparación de placas madre y componentes internos.</p>
+    </div>
+    <div class="service-card">
+      <h3>Software y Liberación</h3>
+      <p>Solucionamos problemas de software y liberamos equipos para todas las compañías.</p>
+    </div>
+  </div>
+</section>
+
+<section id="acerca">
+  <h2>Acerca de Nosotros</h2>
+  <p>Somos un equipo de técnicos certificados con más de 10 años de experiencia en la reparación de dispositivos electrónicos. Nos enorgullece ofrecer un servicio honesto, eficiente y accesible para todos nuestros clientes.</p>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Puedes visitarnos en nuestra tienda o comunicarte con nosotros:</p>
+  <ul>
+    <li>📍 Dirección: Calle Ficticia #123, Ciudad</li>
+    <li>📞 Teléfono: +52 9992621289</li>
+    <li>✉️ Correo:hostreparaciones@gmail.com <li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ghost Tecnology - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
