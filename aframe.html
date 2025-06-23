@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+
+    <style>
+      /* Contenedor de botones a la izquierda */
+      #left-buttons {
+        position: fixed;
+        top: 40%;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 10;
+      }
+      /* Contenedor de botones a la derecha */
+      #right-buttons {
+        position: fixed;
+        top: 40%;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 10;
+      }
+      a.button-link {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        user-select: none;
+      }
+      /* Colores para cada botón */
+      #btn-chichen { background-color: #4CAF50; }
+      #btn-fidel { background-color: #2196F3; }
+      #btn-pacabtun { background-color: #FF5722; }
+      #btn-facebook { background-color: #3b5998; }
+      #btn-instagram { background-color: #E1306C; }
+      #btn-tiktok { background-color: #000000; }
+    </style>
+  </head>
+  <body>
+    <a-scene>
+
+     
+
+      <a-torus-knot position="3 1 -3" radius="0.5" radius-tubular="0.1" color="#646464" normal-scale="1"></a-torus-knot>
+
+      <a-sky src="https://cdn.glitch.global/8b975db9-4036-4e04-bbff-7ac923237eba/Reuni%C3%B3n%20de%20Mascotas%20en%20el%20Prado.png?v=1750388313232"></a-sky>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.me/8b975db9-4036-4e04-bbff-7ac923237eba/Sin_nombre.glb?v=1750656388484"
+        position="-.05 1 -1"
+        rotation="1 1 1"
+        scale="0.5 0.5 0.5"
+        animation-mixer="clip: shake; loop: repeat">
+      </a-entity>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.global/8b975db9-4036-4e04-bbff-7ac923237eba/tripo_pbr_model_7dbe5cc4-ef42-4dcb-b008-2554843547fe.glb?v=1750174257793"
+        position="-.01 1.6 -1"
+        rotation="1 270 1"
+        scale="0.5 0.5 0.5"
+        animation-mixer>
+      </a-entity>
+
+    </a-scene>
+
+    <!-- Botones HTML fijos a la izquierda -->
+    <div id="left-buttons">
+      <a href="https://maps.app.goo.gl/ai5SFnr6owgJDcDB8" target="_blank" id="btn-chichen" class="button-link">Chichen</a>
+      <a href="https://maps.app.goo.gl/GCPay4UqHFnhdLWq8" target="_blank" id="btn-fidel" class="button-link">Fidel</a>
+      <a href="https://maps.app.goo.gl/GCPay4UqHFnhdLWq8" target="_blank" id="btn-pacabtun" class="button-link">Pacabtun</a>
+    </div>
+
+    <!-- Botones HTML fijos a la derecha -->
+    <div id="right-buttons">
+      <a href="https://www.facebook.com/p/Alfa-Mascotas-100068762565887/" target="_blank" id="btn-facebook" class="button-link">Facebook</a>
+      <a href="https://www.instagram.com/alfa_mascotas_?igsh=MWQ0aXE3c3dvc3VnMg==" target="_blank" id="btn-instagram" class="button-link">Instagram</a>
+      <a href="https://www.tiktok.com/@alfa_mascotas?is_from_webapp=1&sender_device=pc" target="_blank" id="btn-tiktok" class="button-link">TikTok</a>
+    </div>
+
+  </body>
+</html>
