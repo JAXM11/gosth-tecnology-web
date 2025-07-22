@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ELEMENTAL LIGHT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .menu li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      background-color: #444;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .menu li a:hover {
+      background-color: #6666662c;
+    }
+
+    .background {
+      background-color: #656565;
+      padding: 40px;
+    }
+
+    .contenido {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contenido img {
+      width: 50%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    .texto-derecha {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex: 1;
+      height: 100%;
+    }
+
+    .texto-derecha h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .texto-derecha button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .texto-derecha button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="navbar">
+    <img src="../app/img/logo.png" alt="Logo de JMXR studio" class="logo" />
+    <ul class="menu">
+      <li><a href="#navbar">Inicio</a></li>
+      <li><a href="#background">Acerca de</a></li>
+      <li><a href="#Contacto">Game play</a></li>
+      <li><a href="#">Personajes</a></li>
+      <li><a href="#">Tienda</a></li>
+      <li><a href="#Contacto">Contacto</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Registro</a></li>
+    </ul>
+  </header>
+
+  <!-- SECCIÓN ACERCA DE -->
+  <section id="background" class="background">
+    <div class="contenido">
+      <img src="../app/img/portada de juegocqartoon.gif" alt="Portada del juego" />
+      <div class="texto-derecha">
+        <h2>ACERCA DE</h2>
+        <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">DOWNLOAD</button>
+      </div>
+    </div>
+  </section>
+
+
+<!-- SECCIÓN DE JUEGO -->
+<section id="Contacto" class="background" style="padding: 80px;">
+  <h2 style="text-align:center; margin-bottom: 20px;">GAME PLAY</h2>
+  <div style="display: flex; justify-content: center;">
+    <iframe 
+      src="../juegohtml/index.html" 
+      width="1080" 
+      height="720" 
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+</body>
+</html>
